@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Reiterhof Kinderhilfe – Vereinsnachrichten</title>
+<style>
+  body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+  table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+  img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+  body { margin: 0 !important; padding: 0 !important; background-color: #EBF0E4; }
+
+  @media screen and (max-width: 600px) {
+    .email-container { width: 100% !important; }
+    .card-stack { display: block !important; width: 100% !important; }
+    .pad-mobile { padding: 20px !important; }
+    .hide-mobile { display: none !important; }
+  }
+</style>
+</head>
+<body style="margin:0; padding:0; background-color:#EBF0E4;">
+
+<!-- Preheader -->
+<div style="display:none; max-height:0; overflow:hidden; font-size:1px; color:#EBF0E4;">
+  Was auf dem Reiterhof los ist – kompakt & direkt aus dem Stall 🐴
+  &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
+</div>
+
+<center style="background-color:#EBF0E4; width:100%;">
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr><td style="padding:24px 0;">
+  <table class="email-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="margin:0 auto;">
+
+    <!-- TOP LABEL -->
+    <tr>
+      <td style="padding:0 0 12px; text-align:center;">
+        <span style="font-family:Arial, sans-serif; font-size:11px; letter-spacing:3px; text-transform:uppercase; color:#4A6A30; background-color:#D4E2C4; padding:4px 16px; border-radius:20px; display:inline-block;">
+          Vereinsnachrichten · {{ "now" | date: "%B %Y" }}
+        </span>
+      </td>
+    </tr>
+
+    <!-- HEADER CARD -->
+    <tr>
+      <td style="background-color:#FFFFFF; border-radius:16px 16px 0 0; padding:36px 36px 32px; text-align:center; border-bottom:2px solid #EBF0E4;">
+        <!-- Horse icon placeholder -->
+        <div style="width:64px; height:64px; background-color:#EEF4E5; border-radius:32px; margin:0 auto 20px; display:table;">
+          <div style="display:table-cell; vertical-align:middle; text-align:center; font-size:32px;">🐴</div>
+        </div>
+        <h1 style="margin:0 0 8px; font-family: 'Palatino Linotype', Palatino, Georgia, serif; font-size:30px; font-weight:400; color:#1E3310; line-height:1.2;">
+          Hallo aus dem Stall!
+        </h1>
+        <p style="margin:0; font-family:Arial, sans-serif; font-size:15px; line-height:1.65; color:#5A6A50; max-width:440px; margin:0 auto;">
+          {{ intro_text | default: "Ein neuer Monat, neue Geschichten und frische Neuigkeiten vom Reiterhof Kinderhilfe e.V. – direkt in euer Postfach." }}
+        </p>
+      </td>
+    </tr>
+
+    <!-- SPACER -->
+    <tr><td style="height:4px; background-color:#EBF0E4; font-size:0;">&nbsp;</td></tr>
+
+    <!-- NEWS CARD 1 – Bericht -->
+    <tr>
+      <td style="background-color:#FFFFFF; padding:0; overflow:hidden;">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td width="220" style="vertical-align:top; padding:0;" class="card-stack">
+              <img src="https://images.squarespace-cdn.com/content/v1/67ae3ba8f893a067bcb342f8/7fc0c98e-5852-4b28-93fb-074eafaa08f0/PHOTO-2025-08-01-13-19-54.jpg"
+                width="220" alt="Bericht vom Hof" style="width:220px; height:180px; object-fit:cover; display:block;">
+            </td>
+            <td style="padding:24px; vertical-align:middle;" class="card-stack">
+              <span style="display:inline-block; background-color:#EEF4E5; color:#2D4A1E; font-family:Arial, sans-serif; font-size:10px; font-weight:700; letter-spacing:2px; text-transform:uppercase; padding:3px 10px; border-radius:3px; margin-bottom:10px;">
+                Vom Hof
+              </span>
+              <h2 style="margin:0 0 8px; font-family: Georgia, serif; font-size:18px; font-weight:400; color:#1E3310; line-height:1.3;">
+                {{ story1_titel | default: "Reiterferien: Fünf unvergessliche Tage" }}
+              </h2>
+              <p style="margin:0 0 14px; font-family:Arial, sans-serif; font-size:13px; line-height:1.65; color:#5A5A4A;">
+                {{ story1_text | default: "Die Kinder haben die Pferde geputzt, gekuschelt, voltigiert – und unseren Haflinger Dr. Motte sogar angemalt! Eine Woche voller Lachen, Staunen und echten Momenten der Verbindung." }}
+              </p>
+              <a href="https://www.reiterhof-kinderhilfe.de/neuigkeiten-termine"
+                 style="font-family:Arial, sans-serif; font-size:12px; font-weight:700; color:#2D4A1E; text-decoration:none; letter-spacing:0.5px;">
+                Mehr lesen →
+              </a>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- SPACER -->
+    <tr><td style="height:4px; background-color:#EBF0E4; font-size:0;">&nbsp;</td></tr>
+
+    <!-- 2-COL MINI CARDS -->
+    <tr>
+      <td style="padding:0;">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <!-- Card A: Termin -->
+            <td width="50%" style="background-color:#2D4A1E; padding:24px; border-radius:0; vertical-align:top;" class="card-stack">
+              <span style="display:inline-block; background-color:#1A2E10; color:#A8C97A; font-family:Arial, sans-serif; font-size:10px; font-weight:700; letter-spacing:2px; text-transform:uppercase; padding:3px 10px; border-radius:3px; margin-bottom:12px;">
+                📅 Termin
+              </span>
+              <h3 style="margin:0 0 8px; font-family: Georgia, serif; font-size:17px; font-weight:400; color:#FDFAF3; line-height:1.3;">
+                {{ termin_titel | default: "Benefizkonzert<br>9. Mai 2026" }}
+              </h3>
+              <p style="margin:0 0 14px; font-family:Arial, sans-serif; font-size:13px; line-height:1.6; color:#A8C97A;">
+                {{ termin_text | default: "Beats meets Charity – ein Abend für unsere Therapiepferde. Karten à 20€ im Büro." }}
+              </p>
+              <a href="mailto:reiterhof-kinderhilfe@web.de"
+                 style="font-family:Arial, sans-serif; font-size:12px; font-weight:700; color:#C9A227; text-decoration:none;">
+                Karten reservieren →
+              </a>
+            </td>
+
+            <td width="4" style="background-color:#EBF0E4; font-size:0;">&nbsp;</td>
+
+            <!-- Card B: Spende -->
+            <td width="50%" style="background-color:#FBF6E8; padding:24px; border-radius:0; vertical-align:top;" class="card-stack">
+              <span style="display:inline-block; background-color:#F5E8B0; color:#8B6914; font-family:Arial, sans-serif; font-size:10px; font-weight:700; letter-spacing:2px; text-transform:uppercase; padding:3px 10px; border-radius:3px; margin-bottom:12px;">
+                💛 Unterstützung
+              </span>
+              <h3 style="margin:0 0 8px; font-family: Georgia, serif; font-size:17px; font-weight:400; color:#3A2A00; line-height:1.3;">
+                {{ spende_titel | default: "Pferdepate werden" }}
+              </h3>
+              <p style="margin:0 0 14px; font-family:Arial, sans-serif; font-size:13px; line-height:1.6; color:#7A6030;">
+                {{ spende_text | default: "Mit einer Patenschaft unterstützt ihr gezielt ein Pferd. Einmal im Jahr: Patensonntag mit Kaffee & Kuchen." }}
+              </p>
+              <a href="https://www.reiterhof-kinderhilfe.de/kontakt"
+                 style="font-family:Arial, sans-serif; font-size:12px; font-weight:700; color:#8B6914; text-decoration:none;">
+                Mehr erfahren →
+              </a>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- SPACER -->
+    <tr><td style="height:4px; background-color:#EBF0E4; font-size:0;">&nbsp;</td></tr>
+
+    <!-- DANKE CARD -->
+    <tr>
+      <td style="background-color:#FFFFFF; padding:28px 36px; text-align:center;">
+        <p style="margin:0 0 6px; font-family:Arial, sans-serif; font-size:11px; letter-spacing:3px; text-transform:uppercase; color:#8B6914;">Ein herzliches Dankeschön</p>
+        <p style="margin:0; font-family: 'Palatino Linotype', Palatino, Georgia, serif; font-size:18px; font-style:italic; color:#2D4A1E; line-height:1.6; max-width:440px; margin:0 auto;">
+          „{{ dankestext | default: "An alle Spender, Helfer, Paten und Freunde des Reiterhofs – ohne euch wäre unsere Arbeit nicht möglich." }}"
+        </p>
+      </td>
+    </tr>
+
+    <!-- SPACER -->
+    <tr><td style="height:4px; background-color:#EBF0E4; font-size:0;">&nbsp;</td></tr>
+
+    <!-- FOOTER CARD -->
+    <tr>
+      <td style="background-color:#FFFFFF; border-radius:0 0 16px 16px; padding:24px 36px; text-align:center; border-top:3px solid #C9A227;" class="pad-mobile">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td style="text-align:center; padding-bottom:16px;">
+              <span style="font-family:Arial, sans-serif; font-size:13px; font-weight:700; letter-spacing:1px; color:#2D4A1E;">Reiterhof Kinderhilfe e.V.</span><br>
+              <span style="font-family:Arial, sans-serif; font-size:12px; color:#7A8A6A; line-height:2;">
+                Spreeallee 3 · 67071 Ludwigshafen · <a href="mailto:reiterhof-kinderhilfe@web.de" style="color:#7A8A6A; text-decoration:none;">reiterhof-kinderhilfe@web.de</a>
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-top:1px solid #E0E8D0; padding-top:16px; text-align:center;">
+              <a href="https://www.reiterhof-kinderhilfe.de" style="font-family:Arial, sans-serif; font-size:12px; color:#4A6A30; text-decoration:none; margin:0 8px;">Website</a>
+              <span style="color:#C0CCA0;">·</span>
+              <a href="https://www.instagram.com/reiterhofkinderhilfe" style="font-family:Arial, sans-serif; font-size:12px; color:#4A6A30; text-decoration:none; margin:0 8px;">Instagram</a>
+              <span style="color:#C0CCA0;">·</span>
+              <a href="{{ unsubscribe_url }}" style="font-family:Arial, sans-serif; font-size:12px; color:#9A6A30; text-decoration:none; margin:0 8px;">Abmelden</a>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+  </table>
+</td></tr>
+</table>
+</center>
+
+</body>
+</html>

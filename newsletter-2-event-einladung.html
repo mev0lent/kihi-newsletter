@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Reiterhof Kinderhilfe – Besondere Einladung</title>
+<style>
+  body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+  table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+  img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+  body { margin: 0 !important; padding: 0 !important; background-color: #1A1200; }
+
+  @media screen and (max-width: 600px) {
+    .email-container { width: 100% !important; }
+    .fluid { max-width: 100% !important; height: auto !important; }
+    .pad-mobile { padding: 24px 20px !important; }
+    .hide-mobile { display: none !important; }
+    .big-text { font-size: 36px !important; }
+  }
+</style>
+</head>
+<body style="margin:0; padding:0; background-color:#1A1200;">
+
+<!-- Preheader -->
+<div style="display:none; max-height:0; overflow:hidden; font-size:1px; color:#1A1200;">
+  Eine besondere Einladung vom Reiterhof Kinderhilfe e.V. 🎵🐴
+  &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
+</div>
+
+<center style="background-color:#1A1200; width:100%;">
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr><td>
+  <table class="email-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="620" style="margin:0 auto;">
+
+    <!-- DECORATIVE TOP STRIPE -->
+    <tr>
+      <td style="background: repeating-linear-gradient(90deg, #C9A227 0px, #C9A227 20px, #8B6914 20px, #8B6914 40px, #F0C940 40px, #F0C940 60px, #8B6914 60px, #8B6914 80px); height:8px; font-size:0;">&nbsp;</td>
+    </tr>
+
+    <!-- HERO / EINLADUNG -->
+    <tr>
+      <td style="background-color:#1E1600; padding:50px 44px 40px; text-align:center;" class="pad-mobile">
+        <p style="margin:0 0 6px; font-family:Arial, sans-serif; font-size:11px; letter-spacing:5px; text-transform:uppercase; color:#C9A227;">
+          ✦ &nbsp;Besondere Einladung &nbsp;✦
+        </p>
+        <h1 class="big-text" style="margin:16px 0; font-family: 'Palatino Linotype', Palatino, Georgia, serif; font-size:48px; font-weight:400; color:#F5EDD0; line-height:1.1; letter-spacing:-1px;">
+          {{ event_titel | default: "Benefizkonzert<br><em style='color:#C9A227; font-style:italic;'>Beats meets Charity</em>" }}
+        </h1>
+        <table cellpadding="0" cellspacing="0" border="0" style="margin:24px auto;">
+          <tr>
+            <td style="background-color:#C9A227; padding:12px 28px; border-radius:2px;">
+              <p style="margin:0; font-family:Arial, sans-serif; font-size:14px; font-weight:700; letter-spacing:2px; color:#1A1200; text-transform:uppercase;">
+                {{ event_datum | default: "9. Mai 2026 · Gemeinschaftshaus Ruchheim" }}
+              </p>
+            </td>
+          </tr>
+        </table>
+        <p style="margin:0; font-family: Georgia, serif; font-size:16px; font-style:italic; color:#B8A070; line-height:1.6;">
+          „{{ event_quote | default: "Auf dem Pferd hat jeder vier gesunde Beine." }}"
+        </p>
+      </td>
+    </tr>
+
+    <!-- BILD STREIFEN -->
+    <tr>
+      <td style="padding:0; overflow:hidden;">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td width="33%" style="padding:0;">
+              <img src="https://images.squarespace-cdn.com/content/v1/67ae3ba8f893a067bcb342f8/ee0edd57-9120-43cc-86ff-7281b1d512f5/PHOTO-2025-08-01-13-20-11.jpg"
+                width="206" alt="" style="width:100%; height:140px; object-fit:cover; display:block;">
+            </td>
+            <td width="34%" style="padding:0;">
+              <img src="https://images.squarespace-cdn.com/content/v1/67ae3ba8f893a067bcb342f8/5d9072a9-f2f1-4217-897e-08e0f8f53090/Urlaub+Ostern.jpg"
+                width="208" alt="" style="width:100%; height:140px; object-fit:cover; display:block;">
+            </td>
+            <td width="33%" style="padding:0;">
+              <img src="https://images.squarespace-cdn.com/content/v1/67ae3ba8f893a067bcb342f8/311e16b5-024c-468f-a9fe-23ddd5b5fd4d/PHOTO-2025-08-01-13-19-40.jpg"
+                width="206" alt="" style="width:100%; height:140px; object-fit:cover; display:block;">
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- EVENT BESCHREIBUNG -->
+    <tr>
+      <td style="background-color:#F5EDD0; padding:40px 44px 32px;" class="pad-mobile">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td style="padding-bottom:24px; border-bottom:2px solid #C9A227;">
+              <h2 style="margin:0 0 12px; font-family: Georgia, serif; font-size:22px; font-weight:400; color:#1A1200;">
+                {{ event_beschreibung_titel | default: "Ein Abend für die gute Sache" }}
+              </h2>
+              <p style="margin:0; font-family:Arial, sans-serif; font-size:15px; line-height:1.75; color:#3A3020;">
+                {{ event_beschreibung | default: "Wir freuen uns riesig, euch zu einem Benefizkonzert zugunsten des Reiterhofs einzuladen! Beats meets Charity hat uns ausgewählt – und wir können es kaum erwarten. Der gesamte Erlös fließt direkt in unsere Therapieangebote für Kinder und Erwachsene mit Einschränkungen." }}
+              </p>
+            </td>
+          </tr>
+        </table>
+
+        <!-- Details-Grid -->
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:24px;">
+          <tr>
+            <td width="50%" style="padding:16px 20px 16px 0; vertical-align:top;">
+              <p style="margin:0 0 4px; font-family:Arial, sans-serif; font-size:10px; letter-spacing:3px; text-transform:uppercase; color:#8B6914;">Datum & Zeit</p>
+              <p style="margin:0; font-family: Georgia, serif; font-size:16px; color:#1A1200;">
+                {{ event_detail_datum | default: "Freitag, 9. Mai 2026" }}<br>
+                <span style="font-size:14px; color:#5A4A20;">{{ event_detail_uhrzeit | default: "Einlass ab 19:00 Uhr" }}</span>
+              </p>
+            </td>
+            <td width="50%" style="padding:16px 0 16px 20px; border-left:1px solid #D0C090; vertical-align:top;">
+              <p style="margin:0 0 4px; font-family:Arial, sans-serif; font-size:10px; letter-spacing:3px; text-transform:uppercase; color:#8B6914;">Ort & Tickets</p>
+              <p style="margin:0; font-family: Georgia, serif; font-size:16px; color:#1A1200;">
+                {{ event_detail_ort | default: "Gemeinschaftshaus Ruchheim" }}<br>
+                <span style="font-size:14px; color:#5A4A20;">{{ event_detail_preis | default: "20 € · im Büro erhältlich" }}</span>
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- CTA -->
+    <tr>
+      <td style="background-color:#F5EDD0; padding:0 44px 40px; text-align:center;" class="pad-mobile">
+        <a href="mailto:reiterhof-kinderhilfe@web.de?subject=Karten reservieren"
+           style="display:inline-block; background-color:#2D4A1E; color:#F5EDD0; font-family:Arial, sans-serif; font-size:13px; font-weight:700; letter-spacing:2px; text-transform:uppercase; text-decoration:none; padding:16px 40px; border-radius:3px; margin-right:8px;">
+          Karten reservieren
+        </a>
+        <a href="https://www.reiterhof-kinderhilfe.de"
+           style="display:inline-block; border:2px solid #2D4A1E; color:#2D4A1E; font-family:Arial, sans-serif; font-size:13px; font-weight:700; letter-spacing:2px; text-transform:uppercase; text-decoration:none; padding:14px 28px; border-radius:3px;">
+          Mehr erfahren
+        </a>
+      </td>
+    </tr>
+
+    <!-- HELFER GESUCHT (secondary) -->
+    <tr>
+      <td style="background-color:#EEF4E5; padding:28px 44px; border-top:3px solid #A8C97A;" class="pad-mobile">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td width="40" style="vertical-align:top; padding-top:2px; font-size:28px; line-height:1;">🙋</td>
+            <td style="padding-left:12px; vertical-align:top;">
+              <p style="margin:0 0 4px; font-family:Arial, sans-serif; font-size:11px; letter-spacing:2px; text-transform:uppercase; color:#2D4A1E;">Wir suchen Helfer!</p>
+              <p style="margin:0; font-family:Arial, sans-serif; font-size:14px; line-height:1.6; color:#3A4A2A;">
+                {{ helfer_text | default: "Für Auf- und Abbau beim Konzert suchen wir noch tatkräftige Unterstützung. Aufbau: 8. Mai ab 10 Uhr · Abbau: 10. Mai ab 11 Uhr. Helferstunden werden angerechnet. Einfach eine kurze Mail schreiben!" }}
+              </p>
+              <a href="mailto:reiterhof-kinderhilfe@web.de?subject=Helfer%20Benefizkonzert"
+                 style="display:inline-block; margin-top:10px; font-family:Arial, sans-serif; font-size:12px; color:#2D4A1E; font-weight:700; text-decoration:none; border-bottom:2px solid #C9A227; padding-bottom:2px;">
+                Als Helfer melden →
+              </a>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- FOOTER -->
+    <tr>
+      <td style="background-color:#1E1600; padding:28px 44px; text-align:center;" class="pad-mobile">
+        <!-- Decorative bottom bar -->
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;">
+          <tr>
+            <td style="background: repeating-linear-gradient(90deg, #C9A227 0px, #C9A227 20px, #8B6914 20px, #8B6914 40px, #F0C940 40px, #F0C940 60px, #8B6914 60px, #8B6914 80px); height:3px; font-size:0;">&nbsp;</td>
+          </tr>
+        </table>
+        <p style="margin:0 0 6px; font-family:Arial, sans-serif; font-size:11px; letter-spacing:3px; text-transform:uppercase; color:#C9A227;">Reiterhof Kinderhilfe e.V.</p>
+        <p style="margin:0 0 16px; font-family:Arial, sans-serif; font-size:12px; color:#6A5A30; line-height:1.6;">
+          Spreeallee 3 · 67071 Ludwigshafen · 06 21 / 67 89 93
+        </p>
+        <p style="margin:0; font-family:Arial, sans-serif; font-size:11px; color:#4A3A18;">
+          <a href="{{ unsubscribe_url }}" style="color:#8B6914; text-decoration:none;">Abmelden</a> &nbsp;·&nbsp;
+          <a href="https://www.reiterhof-kinderhilfe.de/datenschutz" style="color:#8B6914; text-decoration:none;">Datenschutz</a> &nbsp;·&nbsp;
+          <a href="https://www.reiterhof-kinderhilfe.de" style="color:#8B6914; text-decoration:none;">Website</a>
+        </p>
+      </td>
+    </tr>
+
+  </table>
+</td></tr>
+</table>
+</center>
+
+</body>
+</html>
